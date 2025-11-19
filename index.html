@@ -283,6 +283,32 @@
             color: var(--text);
         }
 
+        .guide-image {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--panel);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.guide-image img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.guide-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments for guide images */
+@media (max-width: 768px) {
+    .guide-image {
+        padding: 0.5rem;
+        margin: 1rem 0;
+    }
+}
+
         /* FAQ Section */
         .faq {
             padding: 5rem 0;
@@ -530,53 +556,70 @@ footer {
         </div>
     </section>
 
-    <!-- Support Section -->
-    <section class="support" id="support">
-        <div class="container">
-            <div class="section-title">
-                <h2>Support & User Guide</h2>
-                <p>Get the most out of BrowseNotes with our comprehensive guide</p>
+   <!-- Support Section -->
+<section class="support" id="support">
+    <div class="container">
+        <div class="section-title">
+            <h2>Support & User Guide</h2>
+            <p>Get the most out of BrowseNotes with our comprehensive guide</p>
+        </div>
+        <div class="support-content">
+            <h3>Getting Started</h3>
+            <p>After installing BrowseNotes, you'll see the extension icon in your Chrome toolbar. Click on it to open the note-taking panel.</p>
+            
+            <h3>Taking Notes</h3>
+            <p>There are two ways to capture notes:</p>
+            <ul>
+                <li><strong>Manual Entry:</strong> Open the extension and type your notes directly into the text area.</li>
+            </ul>
+            <div class="guide-image">
+                <img src="1st.png" alt="Manual note entry interface" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid var(--border);">
             </div>
-            <div class="support-content">
-                <h3>Getting Started</h3>
-                <p>After installing BrowseNotes, you'll see the extension icon in your Chrome toolbar. Click on it to open the note-taking panel.</p>
-                
-                <h3>Taking Notes</h3>
-                <p>There are two ways to capture notes:</p>
-                <ul>
-                    <li><strong>Manual Entry:</strong> Open the extension and type your notes directly into the text area.</li>
-                    <li><strong>Text Selection:</strong> Highlight text on any webpage, then right-click and select "Save to BrowseNotes" from the context menu.</li>
-                </ul>
-                
-                <h3>Managing Your Notes</h3>
-                <p>All your notes are displayed in the extension's main panel. You can:</p>
-                <ul>
-                    <li><strong>Search:</strong> Use the search bar to find notes by keyword or URL</li>
-                    <li><strong>Edit:</strong> Click on any note to modify its content</li>
-                    <li><strong>Delete:</strong> Remove notes you no longer need</li>
-                </ul>
-                
-                <h3>Exporting Notes</h3>
-                <p>To export your notes:</p>
-                <ol>
-                    <li>Open the BrowseNotes extension</li>
-                    <li>Click on the "Export" button</li>
-                    <li>Choose between TXT or CSV format</li>
-                    <li>Save the file to your desired location</li>
-                </ol>
-                
-                <h3>Generating Summaries</h3>
-                <p>To create a summary of the current webpage:</p>
-                <ol>
-                    <li>Navigate to the page you want to summarize</li>
-                    <li>Open the BrowseNotes extension</li>
-                    <li>Click the "Summarize" button</li>
-                    <li>The summary will be generated and saved as a new note</li>
-                </ol>
+            
+            <ul>
+                <li><strong>Text Selection:</strong> Highlight text on any webpage, then right-click and select "Save to BrowseNotes" from the context menu.</li>
+            </ul>
+            <div class="guide-image">
+                <img src="2nd.png" alt="Text selection and context menu" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            
+            <h3>Managing Your Notes</h3>
+            <p>All your notes are displayed in the extension's main panel. You can:</p>
+            <ul>
+                <li><strong>Search:</strong> Use the search bar to find notes by keyword or URL</li>
+                <li><strong>Edit:</strong> Click on any note to modify its content</li>
+                <li><strong>Delete:</strong> Remove notes you no longer need</li>
+            </ul>
+            <div class="guide-image">
+                <img src="3rd.png" alt="Note management interface" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            
+            <h3>Exporting Notes</h3>
+            <p>To export your notes:</p>
+            <ol>
+                <li>Open the BrowseNotes extension</li>
+                <li>Click on the "Export" button</li>
+                <li>Choose between TXT or CSV format</li>
+                <li>Save the file to your desired location</li>
+            </ol>
+            <div class="guide-image">
+                <img src="4th.png" alt="Export options interface" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            
+            <h3>Generating Summaries</h3>
+            <p>To create a summary of the current webpage:</p>
+            <ol>
+                <li>Navigate to the page you want to summarize</li>
+                <li>Open the BrowseNotes extension</li>
+                <li>Click the "Summarize" button</li>
+                <li>The summary will be generated and saved as a new note</li>
+            </ol>
+            <div class="guide-image">
+                <img src="5th.png" alt="Summary generation interface" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid var(--border);">
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
